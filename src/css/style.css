@@ -1,21 +1,36 @@
 /* #region GLOBALS */
 :root {
     --main-font-color: black;
-    --dark-green: #6BB877;
+    --pastel-yellow: #FDFD96;
+    --pepperoni-red: #b31925;
     --box-shadow-thin: 2px 2px 5px #7a4b5454, -2px 2px 5px #7a4b5454;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+main {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
 /* #endregion */
 
 
 /* #region HEADER */
 header {
     display: flex;
+    flex: 0 1 auto;
     justify-content: center;
-    background-color: var(--dark-green);
+    background-color: var(--pastel-yellow);
     color: var(--main-font-color);
     padding: 4px;
 }
@@ -71,6 +86,70 @@ address div p {
 }
 
 .nav-main ul a:hover {
-    color: #b31925;
+    color: var(--pepperoni-red);
 }
+/* #endregion */
+
+
+/* #region FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--pepperoni-red);
+}
+/* #endregion */
+
+
+/* #region HOME PAGE */
+
+#home-page main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #b31925;
+}
+
+#home-page .overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(179, 171, 167);
+    opacity: 0.5;
+
+    position: absolute;
+    z-index: 1;
+}
+
+#home-page .backgroundImg {
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    
+    overflow-x: hidden;
+}
+
 /* #endregion */

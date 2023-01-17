@@ -28,7 +28,7 @@ const createHeader = () => {
         scheduleIcon.alt = "Clock icon";
 
         const scheduleInfo = document.createElement("p");
-        scheduleInfo.textContent = "Monday - Friday 12PM - 10.30PM, Saturday and Sunday 10AM - 10.30PM";
+        scheduleInfo.textContent = "Mon - Fri 12PM - 10.30PM, Weekends 10AM - 10.30PM";
 
         const schedule = document.createElement("div");
         schedule.append(scheduleIcon, scheduleInfo);
