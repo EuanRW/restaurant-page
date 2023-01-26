@@ -1,4 +1,4 @@
-import { createPage } from "../functions/createpage";
+import { createPage } from "../functions/createPage";
 import pizzaImg from "../../img/pizza.jpg";
 
 const createMainContent = () => {
