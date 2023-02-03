@@ -28,6 +28,46 @@ main {
     position: relative;
 }
 
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 2px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-weight: bold;
+}
+
+.button-52:after {
+  content: "";
+  background-color: var(--pastel-yellow);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
 /* #endregion */
 
 
@@ -38,7 +78,7 @@ header {
     justify-content: center;
     background-color: var(--pastel-yellow);
     color: var(--main-font-color);
-    padding: 4px;
+    padding: 8px;
 }
 
 address {
@@ -104,8 +144,9 @@ footer {
     flex: 0 1 auto;
     justify-content: center;
     align-items: center;
-    bottom: 10px;
     width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 footer a {
@@ -162,5 +203,33 @@ footer a:hover {
     
     overflow-x: hidden;
 }
+
+#home-page .content {
+    z-index: 2;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    position: relative;
+    top: -10%;
+}
+
+#home-page .content h1{
+    font-size: 56px;
+}
+
+#home-page .content blockquote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-style: italic;
+}
+
+
 
 /* #endregion */

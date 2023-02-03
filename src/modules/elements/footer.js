@@ -11,6 +11,8 @@ const createFooter = () => {
 
         const content = document.createElement("a");
         content.setAttribute("href", "https://github.com/EuanRW");
+        content.setAttribute("target", "_blank");
+        content.setAttribute("rel", "noopener noreferrer");
         content.append(caption, githubIcon);
         return content;
     };

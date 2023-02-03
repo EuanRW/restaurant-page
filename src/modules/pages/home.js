@@ -26,9 +26,9 @@ const createMainContent = () => {
 
     const createQuote = () => {
       const slogan = document.createElement("p");
-      slogan.textContent = "Where more is better.";
+      slogan.textContent = "A slice of heaven.";
       const subSlogan = document.createElement("p");
-      subSlogan.textContent = "Serving mornings right since 1962.";
+      subSlogan.textContent = "Authentic neapolitan style pizza since 1986.";
       const quote = document.createElement("blockquote");
       quote.append(slogan, subSlogan);
       return quote;
@@ -38,6 +38,7 @@ const createMainContent = () => {
       const btn = document.createElement("button");
       btn.setAttribute("type", "button");
       btn.textContent = "Book a table";
+      btn.setAttribute("class", "button-52")
       return btn;
     };
 
