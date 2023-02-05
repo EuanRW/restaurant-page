@@ -8,6 +8,7 @@ const createNavMain = () => {
 
         const homeUnderline = document.createElement("div");
         homeUnderline.setAttribute("class", "underline");
+        homeUnderline.style.display = "flex";
 
         const home = document.createElement("li");
         home.setAttribute("class", "home");
@@ -22,6 +23,7 @@ const createNavMain = () => {
 
         const aboutUnderline = document.createElement("div");
         aboutUnderline.setAttribute("class", "underline");
+        aboutUnderline.style.display = "none";
         const about = document.createElement("li");
 
         about.setAttribute("class", "about");
@@ -32,7 +34,7 @@ const createNavMain = () => {
     const createLogo = () => {
         const logoIcon = document.createElement("img");
         logoIcon.src = logoImg;
-        logoIcon.alt = "Pancakes vector art";
+        logoIcon.alt = "Pizza logo art";
 
         const logoLink = document.createElement("a");
         logoLink.setAttribute("href", "#");
@@ -51,6 +53,7 @@ const createNavMain = () => {
 
         const menuUnderline = document.createElement("div");
         menuUnderline.setAttribute("class", "underline");
+        menuUnderline.style.display = "none"
         const menu = document.createElement("li");
 
         menu.setAttribute("class", "menu");
@@ -65,6 +68,7 @@ const createNavMain = () => {
 
         const contactUnderline = document.createElement("div");
         contactUnderline.setAttribute("class", "underline");
+        contactUnderline.style.display = "none"
         const contact = document.createElement("li");
         
         contact.setAttribute("class", "contact");

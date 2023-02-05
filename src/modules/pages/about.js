@@ -1,8 +1,13 @@
-import { createPage } from "../page-elements/page";
-import { createContentDivider } from "../page-elements/content-divider";
+import { createPage } from "../functions/createPage";
+import chefImg from "../../img/chef-pizza.jpg"
+import signatureImg from "../../img/signature.png"
 
 const createMainContent = () => {
     const createContent = () => {
+        const createBreak = () => {
+            return document.createElement("br")
+        }
+
         const createParagraphOne = () => {
             const paragraphOne = document.createElement("p");
             paragraphOne.textContent = `
@@ -47,19 +52,58 @@ const createMainContent = () => {
             return paragraphFour;
         };
 
+        const createAboutFooter = () => {
+            const createSignatureImg = () => {
+                const img = document.createElement("img");
+                img.setAttribute("class", "signature");
+                img.src = signatureImg;
+                img.alt = "Photo of Tony the Pizza Chef.";
+
+                return img;
+            };
+
+            const createChefImg = () => {
+                const img = document.createElement("img");
+                img.setAttribute("class", "chef");
+                img.src = chefImg;
+                img.alt = "Photo of Tony the Pizza Chef.";
+
+                return img;
+            };
+
+            const createAboutFooterDiv = () => {
+                const footerDiv = document.createElement("div");
+                footerDiv.setAttribute("class", "about-footer");
+                return footerDiv;
+            }
+
+            const aboutFooterDiv = createAboutFooterDiv();
+            aboutFooterDiv.append(
+                createSignatureImg(),
+                createChefImg()
+            )
+            return aboutFooterDiv
+        }
+
         const content = document.createElement("section");
         content.setAttribute("class", "content");
         content.append(
             createParagraphOne(),
+            createBreak(),
             createParagraphTwo(),
+            createBreak(),
             createParagraphThree(),
-            createParagraphFour()
+            createBreak(),
+            createParagraphFour(),
+            createBreak(),
+            createAboutFooter()
+
         );
         return content;
     };
 
     const main = document.createElement("main");
-    main.append(createContent(), createSocials());
+    main.append(createContent());
     return main;
 };
 
