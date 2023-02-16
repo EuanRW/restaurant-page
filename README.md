@@ -3,16 +3,18 @@
 A restaurant page to demonstrate webpack knowledge.
 
 ## Objectives
-- [ ] Gain a greater understanding of webpack by loading assets and managing output.
-- [ ] Demonstrate code-splitting knowledge by organising code into modules.
-- [ ] Use DOM manipulation to dynamically render a webpage.
+- [X] Gain a greater understanding of webpack by loading assets and managing output.
+- [X] Demonstrate code-splitting knowledge by organising code into modules.
+- [X] Use DOM manipulation to dynamically render a webpage.
 
 ## Project Status
-In Progress
+Complete (Mostly)
 
 ## Project Screen Shot(s)
 ![](project.png)
 
 ## Installation and Setup Instructions
 
-Drag the html file into your browser.
+- Clone Github repo down.
+- Run `npm i` to install depenencies.
+- Run `npm run start` to start dev server.
