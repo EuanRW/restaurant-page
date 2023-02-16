@@ -35,6 +35,7 @@ const contactPage = document.querySelector("#contact-page");
 
 window.addEventListener("pageshow", () => hidePages(aboutPage, menuPage, contactPage));
 
+// TODO: Make restaraunt pizza slice logo into home link.
 const pageLinks = document.querySelectorAll(".nav-main a");
 for (const pageLink of pageLinks) {
   pageLink.addEventListener("click", () => {

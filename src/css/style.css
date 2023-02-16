@@ -235,6 +235,7 @@ footer a:hover {
 /* #endregion */
 
 /* #region ABOUT PAGE */
+
 #about-page {
   flex: 1 1 auto;
 }
@@ -253,6 +254,7 @@ footer a:hover {
   padding: 60px;
   font-size: 26px;
   align-items: start;
+  width: 80%;
 }
 
 #about-page main .content .about-footer {
@@ -263,8 +265,11 @@ footer a:hover {
 #about-page main .content .about-footer .signature {
   width: 350px;
   height: 100px;
+  position: relative;
+  left: -80px;
 }
 
+/* TODO: Get chef image to wrap on smaller screen sizes. */
 #about-page main .content .about-footer .chef {
   width: 650px;
   height: 450px;
@@ -274,6 +279,9 @@ footer a:hover {
 /* #endregion */
 
 /* #region MENU PAGE */
+
+/* TODO: Improve menu styling. */
+
 #menu-page {
   flex: 1 1 auto;
 }
@@ -381,8 +389,5 @@ footer a:hover {
   box-sizing: border-box;
   width: 100%;
   resize: none;
-}
-
-#contact-page main .content form .submit {
 }
 /* #endregion */
